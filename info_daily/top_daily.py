@@ -14,10 +14,10 @@ engine = create_engine(util.db_url)
 # pandas.io.sql.to_sql(individual, "individual_20190507_10", engine, schema='StockPick', if_exists='append')
 
 # 营业部上榜统计
-broker_tops = ts.broker_tops(days=10)
-pandas.io.sql.to_sql(broker_tops, "broker_tops_20190507_10", engine, schema='StockPick', if_exists='append')
+# broker_tops = ts.broker_tops(days=10)
+# pandas.io.sql.to_sql(broker_tops, "broker_tops_20190507_10", engine, schema='StockPick', if_exists='append')
 
 # 机构席位追踪
-# institution_tops = ts.inst_tops()
-# pandas.io.sql.to_sql(broker_tops, "broker_tops_20190507_10", engine, schema='StockPick', if_exists='append')
+institution_tops = ts.inst_tops(days=10)
+pandas.io.sql.to_sql(institution_tops, "institution_tops_20190507_10", engine, schema='StockPick', if_exists='append')
 
