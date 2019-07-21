@@ -1,7 +1,7 @@
-import MySQLdb
+import pymysql
 
 db_url = 'mysql://root:root@127.0.0.1/StockPick?charset=utf8'
-conn = MySQLdb.connect(user='root', password='root', database='StockPick')
+conn = pymysql.connect(user='root', password='root', database='StockPick')
 
 
 def get_data_by_table(cur, table_name):
