@@ -1,4 +1,4 @@
-CREATE TABLE `20194030_stock_basics` (
+CREATE TABLE `allstock_2019_0719_1` (
   `code` varchar(45) COLLATE latin1_general_ci NOT NULL,
   `name` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
   `industry` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '细分行业',

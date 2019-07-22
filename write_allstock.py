@@ -55,7 +55,7 @@ total_stock_count = len(stock_info)
 a = 0
 for i in range(0, total_stock_count):
     cursor.execute(
-        'insert into allstock_2019_0507_1 (code,name,industry,area,pe,outstanding,totals,totalAssets,liquidAssets, fixedAssets,reserved,reservedPerShare, eps, bvps, pb, timeToMarket,undp, perundp, rev, profit, gpr, npr, holders) values (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)',
+        'insert into allstock_2019_0719_1 (code,name,industry,area,pe,outstanding,totals,totalAssets,liquidAssets, fixedAssets,reserved,reservedPerShare, eps, bvps, pb, timeToMarket,undp, perundp, rev, profit, gpr, npr, holders) values (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)',
         (stock_info.index[i], stock_info.name[i], stock_info.industry[i], stock_info.area[i], stock_info.pe[i],
          stock_info.outstanding[i], stock_info.totals[i], stock_info.totalAssets[i], stock_info.liquidAssets[i],
          stock_info.fixedAssets[i], stock_info.reserved[i], stock_info.reservedPerShare[i], stock_info.esp[i],
